@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\gjnmb\Desktop\Engineering Folder\KiCAD_Circuits\usb_power\usb_power2\usb_power2.kicad_sch</source>
+    <date>12/31/2022 2:01:26 PM</date>
+    <tool>Eeschema (6.0.8)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Hard Drive Power</title>
+        <company/>
+        <rev>3</rev>
+        <date>2022-12-27</date>
+        <source>usb_power2.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>USB3_A_Male</value>
+      <footprint>ASSMANN_A-USB3_A-LP-SMT1</footprint>
+      <fields>
+        <field name="Digikey Part Number">AE10703-ND</field>
+      </fields>
+      <libsource lib="Connector" part="USB3_A" description="USB 3.0 A connector"/>
+      <property name="Digikey Part Number" value="AE10703-ND"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: usb_power2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7e09a026-923a-435a-8797-95ab554053cc</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>Barrel_Jack</value>
+      <footprint>Connector_BarrelJack:BarrelJack_Horizontal</footprint>
+      <libsource lib="Connector" part="Barrel_Jack" description="DC Barrel Jack"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: usb_power2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>15bff926-c66a-4dd4-84cf-fd056d6dbddb</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>USB3_A_SATA_DRIVE</value>
+      <footprint>CONNUSB09_AU-Y1006-3_14P3X14P25_ASM:AU-Y1006-3</footprint>
+      <datasheet>http://www.assmann-wsw.com/uploads/datasheets/ASS_5775_CO.pdf</datasheet>
+      <fields>
+        <field name="Digikey Part Number">AE10704-ND</field>
+        <field name="Purchase Link">https://www.digikey.com/en/products/detail/assmann-wsw-components/AU-Y1006-3/2700523</field>
+      </fields>
+      <libsource lib="Connector" part="USB3_A" description="USB 3.0 A connector"/>
+      <property name="Purchase Link" value="https://www.digikey.com/en/products/detail/assmann-wsw-components/AU-Y1006-3/2700523"/>
+      <property name="Digikey Part Number" value="AE10704-ND"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: usb_power2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1626f174-893f-4afc-b68e-fbc5902dfc0a</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>1k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical</footprint>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: usb_power2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cb3f34be-d070-4936-a388-418b87fea76a</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Barrel_Jack">
+      <description>DC Barrel Jack</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>BarrelJack*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Barrel_Jack</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="USB3_A">
+      <description>USB 3.0 A connector</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB3_A</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS" type="power_in"/>
+        <pin num="2" name="D-" type="bidirectional"/>
+        <pin num="3" name="D+" type="bidirectional"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="SSRX-" type="output"/>
+        <pin num="6" name="SSRX+" type="output"/>
+        <pin num="7" name="DRAIN" type="passive"/>
+        <pin num="8" name="SSTX-" type="input"/>
+        <pin num="9" name="SSTX+" type="input"/>
+        <pin num="10" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small_US">
+      <description>Resistor, small US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small_US</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="D+">
+      <node ref="J1" pin="3" pinfunction="D+" pintype="bidirectional"/>
+      <node ref="J3" pin="3" pinfunction="D+" pintype="bidirectional"/>
+    </net>
+    <net code="2" name="D-">
+      <node ref="J1" pin="2" pinfunction="D-" pintype="bidirectional"/>
+      <node ref="J3" pin="2" pinfunction="D-" pintype="bidirectional"/>
+    </net>
+    <net code="3" name="GND">
+      <node ref="J1" pin="4" pinfunction="GND" pintype="power_in"/>
+      <node ref="J2" pin="2" pintype="passive"/>
+      <node ref="J3" pin="4" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="4" name="Net-(J2-Pad1)">
+      <node ref="J2" pin="1" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+    <net code="5" name="Net-(J3-Pad1)">
+      <node ref="J3" pin="1" pinfunction="VBUS" pintype="power_in"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="6" name="SSRX+">
+      <node ref="J1" pin="9" pinfunction="SSTX+" pintype="input"/>
+      <node ref="J3" pin="6" pinfunction="SSRX+" pintype="output"/>
+    </net>
+    <net code="7" name="SSRX-">
+      <node ref="J1" pin="8" pinfunction="SSTX-" pintype="input"/>
+      <node ref="J3" pin="5" pinfunction="SSRX-" pintype="output"/>
+    </net>
+    <net code="8" name="SSTX+">
+      <node ref="J1" pin="6" pinfunction="SSRX+" pintype="output"/>
+      <node ref="J3" pin="9" pinfunction="SSTX+" pintype="input"/>
+    </net>
+    <net code="9" name="SSTX-">
+      <node ref="J1" pin="5" pinfunction="SSRX-" pintype="output"/>
+      <node ref="J3" pin="8" pinfunction="SSTX-" pintype="input"/>
+    </net>
+    <net code="10" name="unconnected-(J1-Pad1)">
+      <node ref="J1" pin="1" pinfunction="VBUS" pintype="power_in+no_connect"/>
+    </net>
+    <net code="11" name="unconnected-(J1-Pad7)">
+      <node ref="J1" pin="7" pinfunction="DRAIN" pintype="passive"/>
+    </net>
+    <net code="12" name="unconnected-(J1-Pad10)">
+      <node ref="J1" pin="10" pinfunction="SHIELD" pintype="passive"/>
+    </net>
+    <net code="13" name="unconnected-(J3-Pad7)">
+      <node ref="J3" pin="7" pinfunction="DRAIN" pintype="passive"/>
+    </net>
+    <net code="14" name="unconnected-(J3-Pad10)">
+      <node ref="J3" pin="10" pinfunction="SHIELD" pintype="passive"/>
+    </net>
+  </nets>
+</export>
